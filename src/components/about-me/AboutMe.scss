@@ -1,0 +1,54 @@
+.about-me {
+    padding: 96px 0 168px 0;
+    position: relative;
+    width: 100%;
+    background-color: #EED6D3;
+    background-image: url("../../assets/bg-img.png");
+
+    .highlight {
+        color: #E77F87;
+    }
+
+    .content {
+        display: flex;
+
+        .profile-image-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .profile-image {
+                margin: auto;
+                position: relative;
+                width: fit-content;
+
+                .speach-bubble {
+                    position: absolute;
+                    width: 128px;
+                    height: 128px;
+                    right: 0;
+                }
+
+                .profile {
+                    width: 459px;
+                    height: 459px;
+                    object-fit: cover; 
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        .text-content {
+            width: 50%;
+
+            h2 {
+                font-size: 64px;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+}
