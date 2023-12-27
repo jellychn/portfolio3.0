@@ -52,12 +52,12 @@ export default function CaseStudies(): JSX.Element {
 const Project: React.FC<{ project: Project }> = ({ project }) => (
   <div>
     <div className="project">
-      <img src={project.image} alt="" />
+      <img src={project.image} alt="" style={{ marginRight: "152px" }}  />
       <span className="divider" />
       <div className="project-content">
         <h3>{project.title}</h3>
         <p>{project.description}</p>
-        <button>See Project</button>
+        <button>See Study</button>
       </div>
     </div>
   </div>

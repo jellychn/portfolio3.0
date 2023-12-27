@@ -118,7 +118,7 @@ const Content = (): JSX.Element => {
     {
       title: "RMM Landing page",
       description:
-        "During my time at CanIT Limited, I spearheaded the design and development of the Riccarton Mall Motels' landing page, leveraging VueJS for this project. Riccarton Mall Motels is a prominent motel establishment situated in Christchurch.",
+        "During my time at CanIT Limited, I designed and developed Riccarton Mall Motels' landing page, leveraging VueJS for this project. Riccarton Mall Motels is a prominent motel establishment situated in Christchurch.",
       image: rmm,
       link: "https://rmm.co.nz/",
       year: "2021"
