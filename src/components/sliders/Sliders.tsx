@@ -60,7 +60,7 @@ export default function Sliders({
 
   return (
     <div className="sliders">
-      {/* <Slider
+      <Slider
         image={dev}
         id="dev"
         name="Dev"
@@ -86,7 +86,7 @@ export default function Sliders({
             toggle={toggleDesignDecisionsChecked}
           />
         )}
-      </div> */}
+      </div>
     </div>
   );
 }

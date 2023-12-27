@@ -1,6 +1,6 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useState } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/nav-bar/NavBar";
 import Sliders from "./components/sliders/Sliders";
@@ -15,14 +15,15 @@ export default function App() {
   return (
     <IsDesignContext.Provider value={isDesign}>
     <DesignDecisionsContext.Provider value={designDecisions}>
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
-        <Sliders setDesignDecisions={ setDesignDecisions }  />
+        <Sliders setDesignDecisions={ setDesignDecisions } />
         <Routes>
+          <Route path="/" element={<Home setIsDesign={setIsDesign} />}></Route>
           <Route path="/dev" element={<Home setIsDesign={setIsDesign} />}></Route>
           <Route path="/design" element={<Home setIsDesign={setIsDesign} />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </DesignDecisionsContext.Provider>
     </IsDesignContext.Provider>
   );
