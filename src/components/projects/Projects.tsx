@@ -1,63 +1,85 @@
-import img1 from "../../assets/img-1.jpg";
-import img2 from "../../assets/img-2.jpg";
-import img3 from "../../assets/img-3.jpg";
+import { useLocation } from "react-router-dom";
+import Tooltip from "../tooltip/Tooltop";
+import { useContext } from "react";
+import { DesignDecisionsContext, IsDesignContext } from "../../App";
 
-export default function Projects(): JSX.Element {
-    const projects: Project[] = [
-        {
-            title: "Name",
-            description: "some text to explain the project some text to explain the project",
-            image: img1,
-            link: ""
-        },
-        {
-            title: "Name",
-            description: "some text to explain the project some text to explain the project",
-            image: img2,
-            link: ""
-        },
-        {
-            title: "Name",
-            description: "some text to explain the project some text to explain the project",
-            image: img3,
-            link: ""
-        }
-    ];
+export default function Projects({ projects }: { projects: Project[] }): JSX.Element {
+  const isDesign = useContext(IsDesignContext);
+  const designDecisions = useContext(DesignDecisionsContext);
 
-    return (
-        <div className="projects">
-        <div className="wrapper">
-          <div className="section">
-            <h1 className="sub-title-right">Projects</h1>
-            <div>
-                {projects.map((project: Project) => 
-                    <Project project={project} />
-                )
-                }
-            </div>
+  const headerMsg =
+    "Ensure subheaders are formatted in a larger size compared to the content text. This distinction aids users in identifying the beginning of a new section more easily.";
+
+  return (
+    <div className="projects" id="projects">
+      <div className="wrapper">
+        <div className="section">
+          <div className="tooltip-wrapper">
+            <h1
+              className={
+                isDesign
+                  ? "sub-title-right"
+                  : "sub-title-left"
+              }
+            >
+              {isDesign && designDecisions &&
+                <Tooltip message={ headerMsg } right="0px" top="-50px" position="left" />
+              }
+              Projects
+            </h1>
+          </div>
+          <div>
+            {projects.map((project: Project) => (
+              <Project project={project} />
+            ))}
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
-const Project: React.FC<{ project: Project }> = ({ project }) => (
-    <div>
-    <div className="project">
-        <div className="project-content">
-            <h3>{ project.title }</h3>
-            <p>{ project.description }</p>
-            <button>See Project</button>
+const Project: React.FC<{ project: Project }> = ({ project }) => {
+  const location = useLocation();
+  if (location.pathname === "/design") {
+    return (
+      <div>
+        <div className="project">
+          <div className="project-content">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={ project.link } target="_blank">
+              <button>See Project</button>
+            </a>
+          </div>
+          <span className="divider" />
+          <img src={project.image} alt="" />
         </div>
+      </div>
+    );
+  }
+  return (
+    <div>
+      <div className="project">
+        <img src={project.image} alt="" />
         <span className="divider" />
-        <img src={ project.image } />
+        <div className="project-content">
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+          <h4>{project.year}</h4>
+          <a href={ project.link } target="_blank">
+            <button>See Project</button>
+          </a>
+        </div>
+      </div>
     </div>
-</div>
-);
+  );
+};
 
 type Project = {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  year: string;
 };

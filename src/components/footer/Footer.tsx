@@ -9,11 +9,15 @@ export default function Footer(): JSX.Element {
         <div className="footer">
             <div className="wrapper">
                 <div className="section">
-                    <img className="logo-footer" src={ logo } />
+                    <img className="logo-footer" src={ logo } alt="" />
                     <div className="divider" />
                     <div className="socials-container">
-                        <img className="socials" src={ linkedIn } />
-                        <img className="socials" src={ email } />
+                        <a href="https://www.linkedin.com/in/jerry-chen-3235171b4/" target="_blank">
+                            <img className="socials" src={ linkedIn } alt="" />
+                        </a>
+                        <a href="mailto:jchen123.862@gmail.com">
+                            <img className="socials" src={ email } alt="" />
+                        </a>
                     </div>
                 </div>
             </div>

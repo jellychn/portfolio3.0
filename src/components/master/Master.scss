@@ -51,7 +51,7 @@
             width: 348px;
             height: 324px;
             background-color: #EDAAAF;
-            border: 5px dotted #A49393;
+            border: 5px dashed #A49393;
             box-shadow: 0 0 4px 0 rgba($color: #000000, $alpha: 0.25);
         }
     
@@ -71,9 +71,9 @@
             .square-20 {
                 width: 89px;
                 height: 290px;
-                border-top: 5px dotted #EDAAAF;
-                border-left: 5px dotted #EDAAAF;
-                border-bottom: 5px dotted #EDAAAF;
+                border-top: 5px dashed #EDAAAF;
+                border-left: 5px dashed #EDAAAF;
+                border-bottom: 5px dashed #EDAAAF;
             }
         }
     
@@ -121,9 +121,9 @@
                 position: relative;
                 width: 35px;
                 height: 68px;
-                border-top: 5px dotted #EDAAAF;
-                border-right: 5px dotted #EDAAAF;
-                border-bottom: 5px dotted #EDAAAF;
+                border-top: 5px dashed #EDAAAF;
+                border-right: 5px dashed #EDAAAF;
+                border-bottom: 5px dashed #EDAAAF;
                 top: 20px;
                 right: 10px;
             }
@@ -144,7 +144,7 @@
     height: 600px;
     background-color: #EDAAAF;
     border-radius: 100%;
-    border: 5px dotted #A49393;
+    border: 5px dashed #A49393;
     bottom: -250px;
     left: -150px;
     box-shadow: 0 0 4px 0 rgba($color: #000000, $alpha: 0.25);

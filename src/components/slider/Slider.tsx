@@ -1,21 +1,18 @@
-import { useState } from "react";
 import "./Slider.scss";
 
 export default function Slider({
   image,
   id,
-  name
+  name,
+  checked,
+  toggle
 }: {
   image: string;
   id: string;
   name: string;
+  checked: boolean;
+  toggle: () => void;
 }): JSX.Element {
-  const [checked, setChecked] = useState<boolean>(false);
-
-  const toggle = (): void => {
-    setChecked(!checked);
-  };
-
   return (
     <div className="slider-container">
         <h3 className="name">{name}</h3>
