@@ -7,14 +7,16 @@
     display: flex;
     box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
     border-radius: 40px;
-    background-color: #E8B4B8;
+    background-color: #e7e4db;
 
     .content-left, .content-right {
-        background-color: #E8B4B8;
+        background-color: #e7e4db;
         display: flex;
         flex-direction: column;
         justify-content: center;
         transition: background-color 0.4s;
+        background-color: url("../../assets/bg-img.png");
+        background-size: cover;
 
         img {
             width: 20px;
