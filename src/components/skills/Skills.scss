@@ -14,12 +14,13 @@
         display: flex;
 
         .skill {
-            margin: 16px;
+            margin: 12px;
             width: 230px;
             
             .skill-image {
                 width: 200px;
                 height: 200px;
+                border-radius: 10px;
                 background-color: #272727;
                 display: flex;
                 justify-content: center;
@@ -27,8 +28,8 @@
 
                 img {
                     margin: auto;
-                    width: 60%;
-                    height: 60%;
+                    width: 40%;
+                    height: 40%;
                     object-fit: contain;
                 }
             }
