@@ -8,13 +8,20 @@
 
     .scissors {
         bottom: -40px;
-        right: 300px;
+        right: 0px;
         position: absolute;
         width: 80px;
         height: 80px;
         transform: rotate(-90deg);
     }
-    
+
+    .paper-plane {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        bottom: -35px;
+        left: 0pz;
+    }
 }
 
 .logo {
@@ -147,12 +154,4 @@
             }
         }
     }
-}
-
-.paper-plane {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    bottom: -35px;
-    left: 0pz;
 }

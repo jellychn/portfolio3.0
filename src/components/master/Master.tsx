@@ -60,8 +60,8 @@ export default function Main(): JSX.Element {
           </div>
         </div>
         <img className="paper-plane" src={paperPlane} alt="" />
+        <img className="scissors" src={scissors} />
       </div>
-      <img className="scissors" src={scissors} />
     </div>
   );
 }
