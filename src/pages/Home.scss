@@ -18,13 +18,13 @@
 
 .wrapper {
     position: relative;
-    width: 1300px;
+    width: 1200px;
     margin: auto;
 }
 
 .projects {
     z-index: 100;
-    margin: 80px 0 256px 0;
+    margin: 152px 0 256px 0;
 }
 
 .project {
@@ -40,21 +40,22 @@
         }
 
         h4 {
+            margin: 0 0 30px 0;
             font-size: 24px;
         }
 
         p {
-            margin: 40px 0 50px 0;
-            font-size: 22px;
+            margin: 30px 0 40px 0;
+            font-size: 20px;
         }
 
         button {
             width: fit-content;
-            padding: 25px 50px;
+            padding: 20px 40px;
             border-radius: 10px;
             outline: none;
             border: none;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 600;
             background-image: url("../assets/space.jpg");
             background-position: center;
@@ -65,7 +66,7 @@
             transition: box-shadow 0.3s ease;
 
             &:hover {
-                box-shadow: 10px 10px 0 5px #ddd;
+                box-shadow: 8px 8px 0 4px #ddd;
             }
         }
     }

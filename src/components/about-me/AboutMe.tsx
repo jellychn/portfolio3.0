@@ -100,7 +100,7 @@ const Content = ({ isDesign, designDecisions }: { isDesign: boolean; designDecis
       </p>
       <p>
         My expertise lies in
-         <span className="highlight">Full stack development</span>, and I've had the privilege
+         <span className="highlight"> Full stack development</span>, and I've had the privilege
         of contributing to amazing companies and overseas projects.
       </p>
       <p>

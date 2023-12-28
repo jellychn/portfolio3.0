@@ -71,7 +71,7 @@ const Content = (): JSX.Element => {
 
   const projects = [
     {
-      title: "Tricor project",
+      title: "Tricor Project",
       description:
         "As a software engineer with Dave Clark, I played a pivotal role in the development of the Tricor project—an international, cutting-edge software designed to facilitate seamless corporate onboarding for global companies. As a full stack engineer on this project, I leveraged a robust tech stack comprising ReactJS, ExpressJS, NodeJS, MS Azure, Tailwind, and Stroybook. My responsibilities included implementing solutions across the entire software spectrum, contributing to its functionality and user experience, thereby enhancing the platform's efficiency and effectiveness in streamlining corporate onboarding processes on a global scale.",
       image: tricor,
@@ -80,7 +80,7 @@ const Content = (): JSX.Element => {
       disabled: false
     },
     {
-      title: "LawVu project",
+      title: "LawVu Project",
       description:
         "As a software engineer at LawVu, I was integral to the continuous development of the primary LawVu software project. LawVu serves as a global solution for empowering large corporations' in-house legal teams in managing their legal operations. My role involved utilizing a tech stack inclusive of Angular, Storybook, MS Azure, and .NET. I contributed significantly to enhancing and evolving this essential tool, ensuring it met the diverse and critical needs of corporate legal departments worldwide.",
       image: lawvu,
@@ -89,7 +89,7 @@ const Content = (): JSX.Element => {
       disabled: false
     },
     {
-      title: "Yoominii project",
+      title: "Yoominii Project",
       description:
         "The Yoominii project is a personal endeavor featuring an ecommerce website developed using Angular, AWS services, and integrated with Stripe for seamless transactions.",
       image: yoominii,
@@ -98,7 +98,7 @@ const Content = (): JSX.Element => {
       disabled: false
     },
     {
-      title: "CanIT Limited landing page",
+      title: "CanIT Limited Landing Page",
       description:
         "While at CanIT Limited, I undertook various projects, one of which involved the design and development of the primary landing page utilizing VueJS.",
       image: canit,
@@ -107,7 +107,7 @@ const Content = (): JSX.Element => {
       disabled: false
     },
     {
-      title: "RMM landing page",
+      title: "RMM Landing Page",
       description:
         "During my time at CanIT Limited, I designed and developed Riccarton Mall Motels' landing page, leveraging VueJS for this project. Riccarton Mall Motels is a prominent motel establishment situated in Christchurch.",
       image: rmm,

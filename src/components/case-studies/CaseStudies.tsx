@@ -28,7 +28,7 @@ export default function CaseStudies(): JSX.Element {
               {isDesign && designDecisions &&
                 <Tooltip message={ spaceMsg } top="-45px" position="right" />
               }
-              Case studies
+              Case Studies
             </h1>
           </div>
           <div>
@@ -45,7 +45,7 @@ export default function CaseStudies(): JSX.Element {
 const Project: React.FC<{ project: Project }> = ({ project }) => (
   <div>
     <div className="project">
-      <img src={project.image} alt="" style={{ marginRight: "152px" }}  />
+      <img src={project.image} alt="" style={{ marginRight: "120px" }}  />
       <span className="divider" />
       <div className="project-content">
         <h3>{project.title}</h3>

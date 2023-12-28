@@ -53,7 +53,7 @@ const Project: React.FC<{ project: Project }> = ({ project }) => {
             </a>
           </div>
           <span className="divider" />
-          <img src={project.image} alt="" style={{ marginLeft: "152px" }} />
+          <img src={project.image} alt="" style={{ marginLeft: "120px" }} />
         </div>
       </div>
     );
@@ -61,7 +61,7 @@ const Project: React.FC<{ project: Project }> = ({ project }) => {
   return (
     <div>
       <div className="project">
-        <img src={project.image} alt="" style={{ marginRight: "152px" }}  />
+        <img src={project.image} alt="" style={{ marginRight: "120px" }}  />
         <span className="divider" />
         <div className="project-content">
           <h3>{project.title}</h3>
