@@ -15,3 +15,8 @@ code {
 .divider {
   flex: 1;
 }
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}

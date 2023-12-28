@@ -23,7 +23,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
               }
             >
               {isDesign && designDecisions &&
-                <Tooltip message={ headerMsg } right="0px" top="-50px" position="left" />
+                <Tooltip message={ headerMsg } right="0px" top="-35px" position="left" />
               }
               Projects
             </h1>
@@ -49,7 +49,7 @@ const Project: React.FC<{ project: Project }> = ({ project }) => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <a href={ project.link } target="_blank">
-              <button>See Project</button>
+              <button disabled={project.disabled} className={ project.disabled ? "disabled" : "" }>See Project</button>
             </a>
           </div>
           <span className="divider" />
@@ -82,4 +82,5 @@ type Project = {
   image: string;
   link: string;
   year: string;
+  disabled: boolean;
 };

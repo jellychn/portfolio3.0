@@ -21,7 +21,7 @@ export default function Work(): JSX.Element {
             time: "Jan 2022 - March 2023",
             city: "Tauranga,",
             country: "New Zealand",
-            company: "LawBu",
+            company: "LawVu",
             title: "Software engineer",
             image: lawvu,
             link: true,

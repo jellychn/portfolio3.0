@@ -31,13 +31,6 @@ export default function Home({ setIsDesign }: { setIsDesign: (design: boolean) =
   return (
     <div>
       <Master />
-      <div className="showcase-container">
-        <div className="showcase-wrapper">
-          <img className="showcase" src={tricor} alt="" />
-          <img className="showcase" src={lawvu} alt="" />
-          <img className="showcase" src={canit} alt="" />
-        </div>
-      </div>
       <Content />
       <AboutMe />
       <Footer />
@@ -50,28 +43,22 @@ const Content = (): JSX.Element => {
   if (location.pathname === "/design") {
     const projects = [
       {
-        title: "Name",
+        title: "UI Project",
         description:
-          "some text to explain the project some text to explain the project",
+          "",
         image: img1,
         link: "",
-        year: "2023"
+        year: "2023",
+        disabled: true
       },
       {
-        title: "Name",
+        title: "UX Project",
         description:
-          "some text to explain the project some text to explain the project",
-        image: lawvu,
-        link: "",
-        year: "2023"
-      },
-      {
-        title: "Name",
-        description:
-          "some text to explain the project some text to explain the project",
+          "",
         image: img3,
         link: "",
-        year: "2023"
+        year: "2023",
+        disabled: true
       },
     ];
     return (
@@ -84,44 +71,49 @@ const Content = (): JSX.Element => {
 
   const projects = [
     {
-      title: "Tricor Project",
+      title: "Tricor project",
       description:
         "As a software engineer with Dave Clark, I played a pivotal role in the development of the Tricor project—an international, cutting-edge software designed to facilitate seamless corporate onboarding for global companies. As a full stack engineer on this project, I leveraged a robust tech stack comprising ReactJS, ExpressJS, NodeJS, MS Azure, Tailwind, and Stroybook. My responsibilities included implementing solutions across the entire software spectrum, contributing to its functionality and user experience, thereby enhancing the platform's efficiency and effectiveness in streamlining corporate onboarding processes on a global scale.",
       image: tricor,
       link: "https://www.tricorglobal.com/",
-      year: "2023"
+      year: "2023",
+      disabled: false
     },
     {
-      title: "LawVu Project",
+      title: "LawVu project",
       description:
         "As a software engineer at LawVu, I was integral to the continuous development of the primary LawVu software project. LawVu serves as a global solution for empowering large corporations' in-house legal teams in managing their legal operations. My role involved utilizing a tech stack inclusive of Angular, Storybook, MS Azure, and .NET. I contributed significantly to enhancing and evolving this essential tool, ensuring it met the diverse and critical needs of corporate legal departments worldwide.",
       image: lawvu,
       link: "https://lawvu.com/",
-      year: "2022"
+      year: "2022",
+      disabled: false
     },
     {
-      title: "Yoominii Project",
+      title: "Yoominii project",
       description:
         "The Yoominii project is a personal endeavor featuring an ecommerce website developed using Angular, AWS services, and integrated with Stripe for seamless transactions.",
       image: yoominii,
       link: "https://www.yoominii.com/",
-      year: "2022"
+      year: "2022",
+      disabled: false
     },
     {
-      title: "CanIT Limited Landing page",
+      title: "CanIT Limited landing page",
       description:
         "While at CanIT Limited, I undertook various projects, one of which involved the design and development of the primary landing page utilizing VueJS.",
       image: canit,
       link: "https://canit.co.nz/",
-      year: "2021"
+      year: "2021",
+      disabled: false
     },
     {
-      title: "RMM Landing page",
+      title: "RMM landing page",
       description:
         "During my time at CanIT Limited, I designed and developed Riccarton Mall Motels' landing page, leveraging VueJS for this project. Riccarton Mall Motels is a prominent motel establishment situated in Christchurch.",
       image: rmm,
       link: "https://rmm.co.nz/",
-      year: "2021"
+      year: "2021",
+      disabled: false
     },
   ];
 
