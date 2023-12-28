@@ -16,6 +16,10 @@
     .socials-container {
         display: flex;
 
+        a {
+            margin: auto;
+        }
+
         .socials {
             cursor: pointer;
             width: 38px;

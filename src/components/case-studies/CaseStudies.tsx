@@ -28,7 +28,7 @@ export default function CaseStudies(): JSX.Element {
               {isDesign && designDecisions &&
                 <Tooltip message={ spaceMsg } top="-45px" position="right" />
               }
-              Case Studies
+              Case studies
             </h1>
           </div>
           <div>
