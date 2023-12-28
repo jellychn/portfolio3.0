@@ -4,6 +4,8 @@
     width: 100%;
     background-color: #EED6D3;
     background-image: url("../../assets/bg-img.png");
+    border-top: 5px dashed #67595E;
+    box-shadow: 0 0 4px 10px rgba($color: #000000, $alpha: 0.25);
 
     .highlight {
         color: #E77F87;

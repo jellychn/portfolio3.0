@@ -16,7 +16,6 @@ export default function Main(): JSX.Element {
   const quote = "{ Technical with a sprinkle of elegance }";
 
   const squareMsg = "Apply shadow effects to shapes for a dynamic touch.";
-  const circleMsg = "Incorporate additional shapes to occupy vacant spaces and enhance the overall design's visual depth and completeness.";
   const helloWorldMsg = "Utilize diverse shades and varying color intensities strategically to guide the user's focus. More prominent colors draw greater attention, indicating areas of higher importance or focus within the design or interface.";
 
   return (
@@ -60,12 +59,7 @@ export default function Main(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className="circle tooltip-wrapper">
-          {isDesign && designDecisions &&
-            <Tooltip message={ circleMsg } right="50px" />
-          }
-          <img className="paper-plane" src={paperPlane} alt="" />
-        </div>
+        <img className="paper-plane" src={paperPlane} alt="" />
       </div>
       <img className="scissors" src={scissors} />
     </div>
