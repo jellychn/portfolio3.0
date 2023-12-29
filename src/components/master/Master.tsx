@@ -2,7 +2,6 @@ import "./Master.scss";
 
 import logo from "../../assets/logo.svg";
 import scissors from "../../assets/scissors.svg";
-import paperPlane from "../../assets/paper-plane.svg";
 import { useContext } from "react";
 import Tooltip from "../tooltip/Tooltop";
 import { DesignDecisionsContext, IsDesignContext } from "../../App";
@@ -59,7 +58,6 @@ export default function Main(): JSX.Element {
             </div>
           </div>
         </div>
-        <img className="paper-plane" src={paperPlane} alt="" />
         <img className="scissors" src={scissors} />
       </div>
     </div>
