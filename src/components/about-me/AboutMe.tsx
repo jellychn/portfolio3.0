@@ -49,7 +49,7 @@ const Content = ({ isDesign, designDecisions }: { isDesign: boolean; designDecis
               <Tooltip message={ highlightMsg } right="0px" top="-65px" />
             }
             software engineer</span> with a dynamic
-          background spanning over 3 years in the tech industry. My journey in
+          background spanning over 4 years in the tech industry. My journey in
           software engineering has been an incredible learning curve, allowing
           me to hone my skills in coding and problem-solving.
         </p>
@@ -87,7 +87,7 @@ const Content = ({ isDesign, designDecisions }: { isDesign: boolean; designDecis
       <h2>About Me</h2>
       <p>
         Hi I'm Jerry, a dedicated <span className="highlight">software engineer</span> with a rich experience
-        spanning over 3 years in the dynamic tech landscape. Over this period,
+        spanning over 4 years in the dynamic tech landscape. Over this period,
         I've delved into the intricate world of coding, problem-solving, and
         software development.
       </p>
